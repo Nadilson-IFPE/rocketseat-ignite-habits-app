@@ -8,7 +8,7 @@ export const api = axios.create({
     // forma de descobrir o IP é através do comando ipconfig
     // no terminal. Deve-se substituir o "localhost" a seguir pelo
     // IP obtido.
-  baseURL: "http://192.168.1.102:3333",
+  baseURL: "http://localhost:3333",
   headers: {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': '*',
