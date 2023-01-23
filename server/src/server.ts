@@ -10,6 +10,8 @@ app.register(appRoutes)
 
 app.listen({
     port: 3333,
-}).then(() => {
-    console.log(`HTTP Server running on port ${(app.server as any).address().port}`)
+    host: '0.0.0.0',  // Fix: 'AxiosError: Network Error'
+}).then((url) => {
+   // console.log(`HTTP Server running on port ${(app.server as any).address().port}`)
+   console.log(`HTTP Server running on ${url}`)
 })
